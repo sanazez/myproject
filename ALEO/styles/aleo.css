@@ -1,0 +1,666 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: aleo-light;
+        src: url(/fonts/aleo-light.ttf);
+    }
+    
+    @font-face {
+        font-family: Proxima-Nova;
+        src: url(/fonts/proxima\ nova.ttf);
+    }
+    
+    @font-face {
+        font-family: aleo-italic;
+        src: url(/fonts/aleo-italic.ttf);
+    }
+    
+    .wrapper {
+        width: 1280px;
+        margin: 0 auto;
+    }
+    
+    header {
+        height: 550px;
+        background: url(/images/bg-header.jpg) no-repeat 0 0;
+    }
+    
+    .cont-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo-aleo img {
+        margin: 21px 0 0 33px;
+    }
+    
+    .menu-header {
+        display: flex;
+        margin: 15px 30px 0 0;
+    }
+    
+    .menu-header ul {
+        list-style-type: none;
+        display: flex;
+        margin-top: 11px;
+    }
+    
+    .menu-header ul li {
+        margin: 0 16px 0 16px;
+    }
+    
+    .menu-header ul a {
+        color: white;
+        font-size: 18px;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    
+    .menu-header ul a:hover {
+        border-bottom: 2px solid white;
+        font-weight: bold;
+    }
+    
+    .menu-header ul li:last-child {
+        margin-right: 52px;
+    }
+    
+    .search-header {
+        border: 1px solid white;
+        height: 35px;
+        width: 227px;
+        border-radius: 14px;
+    }
+    
+    .search-header form {
+        display: flex;
+        align-items: center;
+        line-height: 35px;
+    }
+    
+    .input-search {
+        background-color: transparent;
+        border: 0px solid white;
+        color: white;
+        font-size: 18px;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+    }
+    
+    .search-header a {
+        margin: 0 17px 0 17px;
+    }
+    
+    .search-header input::placeholder {
+        color: white;
+        font-size: 18px;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+    }
+    
+    .input-search:focus {
+        outline: 0;
+    }
+    
+    .heading-inspiration {
+        height: 30px;
+        width: 128px;
+        background: #0FA6FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 224px 0 0 35px;
+    }
+    
+    .insp-points {
+        color: white;
+        font-size: 17px;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+    }
+    
+    .subconscious {
+        font-family: aleo-italic, Helvetica, sans-serif;
+        color: white;
+        font-size: 42px;
+        margin-left: 35px;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    
+    .question-header {
+        color: white;
+        font-family: aleo-italic, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    
+    .read-more-header {
+        margin: 21px 0 0 35px;
+    }
+    
+    .cont-read-more {
+        width: 136px;
+        height: 32px;
+    }
+    
+    .read-more {
+        text-decoration: none;
+        color: white;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid white;
+    }
+    
+    main {
+        width: 805px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .talking-points {
+        width: 805px;
+    }
+    
+    .content {
+        background: #282828;
+        padding: 15px 40px 0 33px;
+        display: flex;
+    }
+    
+    .menu-main {
+        display: flex;
+        list-style-type: none;
+        height: 59px;
+        align-items: center;
+        justify-content: space-between;
+        background: #3D3D3D;
+    }
+    
+    .menu-main a {
+        color: white;
+        text-decoration: none;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    
+    .menu-main a:hover {
+        text-decoration: underline;
+    }
+    
+    .menu-main li:last-child {
+        margin-right: 26px;
+        margin-left: 41px;
+    }
+    
+    .menu-main li:first-child {
+        margin-left: 26px;
+    }
+    
+    .politicians {
+        background: white;
+        padding: 25px 30px 0 28px;
+        height: 270px;
+    }
+    
+    .heading-talking-points {
+        height: 30px;
+        width: 160px;
+        background: #D21F73;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    
+    .foto-main {
+        float: right;
+        margin-top: 15px;
+    }
+    
+    .text-politicians {
+        font-size: 34px;
+        color: #D21F73;
+        margin-left: 58px;
+    }
+    
+    .quotes {
+        float: left;
+    }
+    
+    .travel,
+    .science,
+    .photography {
+        width: 393px;
+        background: white;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .image-travel {
+        width: 393px;
+        height: 206px;
+        background: url(/images/travel.jpg) no-repeat 0 0;
+        background-size: cover;
+    }
+    
+    .heading-travel,
+    .heading-science,
+    .heading-photography {
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 28px;
+    }
+    
+    .heading-travel {
+        width: 90px;
+        background: #6BB40B;
+    }
+    
+    .forest-bags {
+        font-family: aleo-light, arial, sans-serif;
+        font-size: 23px;
+        margin: 11px 0 0 28px;
+        color: #414141;
+    }
+    
+    .embers-solution {
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 7px 24px 0 28px;
+        color: #8C8A8A;
+    }
+    
+    .read-message {
+        background: #3D3C3C;
+        margin-top: 14px;
+        height: 60px;
+        display: flex;
+    }
+    
+    .read-more-main {
+        margin: 14px 15px 0 28px;
+    }
+    
+    .message {
+        margin-top: 14px;
+        width: 61px;
+        height: 32px;
+        box-sizing: border-box;
+    }
+    
+    .bubble {
+        margin-right: 12px;
+    }
+    
+    .science {
+        width: 393px;
+    }
+    
+    .image-science {
+        width: 393px;
+        height: 426px;
+        background: url(/images/pencil.jpg) no-repeat 0 0;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .travel-science-photography {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .heading-science {
+        width: 94px;
+        background: #FF9B00;
+    }
+    
+    .photography {
+        margin-top: -198px;
+    }
+    
+    .image-photography {
+        width: 393px;
+        height: 539px;
+        background: url(/images/photography.jpg) no-repeat 0 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: aleo-light, arial, sans-serif;
+        font-size: 23px;
+        color: white;
+    }
+    
+    .heading-photography {
+        width: 152px;
+        background: #8598A0;
+    }
+    
+    .instagram-snapshots {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 13px 0 20px 25px;
+    }
+    
+    .museums {
+        font-family: aleo-light, arial, sans-serif;
+        font-size: 23px;
+        margin: 26px 0 0 28px;
+        color: #414141;
+    }
+    
+    .text-museums {
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 7px 24px 40px 28px;
+        color: #8C8A8A;
+    }
+    
+    .load-more {
+        background: #3D3C3C;
+        width: 805px;
+        height: 60px;
+        margin-top: 17px;
+    }
+    
+    .link-load-more {
+        border: 0px solid white;
+        line-height: 60px;
+    }
+    
+    .link-load-more img {
+        margin-right: 16px;
+    }
+    
+    .right-sidebar {
+        width: 386px;
+        margin-left: 16px;
+    }
+    
+    .tabs-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .trending,
+    .editor {
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        width: 193px;
+        background: #3D3C3C;
+        height: 58px;
+        line-height: 58px;
+        transition: all 0.3s ease;
+    }
+    
+    .trending:hover,
+    .editor:hover {
+        cursor: pointer;
+    }
+    
+    .trending-list {
+        list-style-type: none;
+        background: white;
+        display: none;
+    }
+    
+    .trending-list img {
+        float: right;
+        margin: 22px 26px 0 0;
+    }
+    
+    .trending-list li {
+        border-bottom: 1px solid #E2E1E1;
+        position: relative;
+        transition: background 0.5s ease;
+    }
+    
+    .trending-list a {
+        display: block;
+        color: #3D3D3D;
+        text-decoration: none;
+    }
+    
+    .trending-list li ul a {
+        color: #737272;
+    }
+    
+    .trending-list li:hover {
+        background: #EEEEED;
+    }
+    
+    .trending-list li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .heding-list {
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 30px;
+        display: inline-block;
+    }
+    
+    .text-list {
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #737272;
+        display: inline-block;
+    }
+    
+    .heding-list,
+    .text-list {
+        padding-top: 19px;
+        padding-bottom: 18px;
+    }
+    
+    .text-center {
+        width: 386px;
+        text-align: center;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #737272;
+    }
+    
+    .nested-list {
+        visibility: hidden;
+        position: absolute;
+        z-index: 2;
+        background: white;
+        width: 386px;
+        text-align: center;
+        list-style-type: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .active-tab,
+    .heading-weather a:hover {
+        background: #E9E4E4;
+        color: #3D3C3C;
+    }
+    
+    .active-list {
+        display: block;
+    }
+    
+    .weather,
+    .photo-gallery {
+        margin-top: 20px;
+    }
+    
+    .heading-weather {
+        background: #3D3C3C;
+        width: 386px;
+        height: 58px;
+        text-align: center;
+        margin-top: 14px;
+    }
+    
+    .heading-weather a {
+        color: white;
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 58px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .info-weather {
+        font-family: Proxima-Nova, Helvetica, sans-serif;
+        width: 336px;
+        background: white;
+        padding: 20px 25px 28px 25px;
+    }
+    
+    .date-weather {
+        font-size: 22px;
+        color: #3D3C3C;
+        margin-bottom: 30px;
+    }
+    
+    .image-weather {
+        width: 336px;
+        height: 208px;
+        border: 1px solid #FBCB72;
+        background: #FDF7EF;
+    }
+    
+    .image-weather img {
+        float: right;
+        margin: 28px 33px 0 0;
+    }
+    
+    .image-weather p {
+        color: #C9C9C9;
+        font-size: 23px;
+        margin: 52px 0 0 30px;
+    }
+    
+    .image-weather span {
+        font-size: 50px;
+        color: #3D3C3C;
+    }
+    
+    .weather-next {
+        margin: 33px 0;
+        height: 124px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+    
+    .weather-next img {
+        margin-top: 5px;
+    }
+    
+    .weather-next li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding: 21px 20px 14px 20px;
+    }
+    
+    .weather-next li:not(:last-child) {
+        border-right: 1px dotted #B8B8B8;
+    }
+    
+    .temp-weather {
+        color: #3D3C3C;
+        font-size: 20px;
+    }
+    
+    .time-weather {
+        color: #D2D2D2;
+        font-size: 18px;
+    }
+    
+    .search-city-weather {
+        border: 0px solid white;
+        background-color: transparent;
+        margin-left: 18px;
+    }
+    
+    .search-city-weather:focus {
+        outline: 0;
+    }
+    
+    .search-weather {
+        background: #D9D8D8;
+        width: 335px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .search-weather img {
+        margin-top: 10px;
+        margin-right: 26px;
+    }
+    
+    .gallery-preview {
+        display: flex;
+        width: 360px;
+        height: 237px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: white;
+        padding: 12px 12px 18px 12px;
+    }
+    
+    .gallery-preview div {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 12px;
+    }
+    
+    .photo1 {
+        background: url(/images/photo1.jpg) no-repeat 0 0;
+        background-position: right;
+    }
+    
+    .photo2 {
+        background: url(/images/photo2.jpg) no-repeat 0 0;
+        background-position: right;
+    }
+    
+    .photo3 {
+        background: url(/images/photo3.jpg) no-repeat 0 0;
+        background-position: left;
+    }
+    
+    .photo4 {
+        background: url(/images/photo4.jpg) no-repeat 0 0;
+        background-position: center;
+    }
+    
+    .photo5 {
+        background: url(/images/photo5.jpg) no-repeat 40% 0;
+    }
+    
+    .photo6 {
+        background: url(/images/photo6.jpg) no-repeat 0 0;
+        background-position: center;
+    }
+    
+    footer {
+        background: #282828;
+        color: white;
+        height: 114px;
+        text-align: center;
+        line-height: 114px;
+    }
