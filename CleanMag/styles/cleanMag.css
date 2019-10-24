@@ -26,10 +26,19 @@
                 
                 .logo {
                     align-self: center;
+                    width: 19.1919%:
+                }
+                
+                .link-img-logo {
+                    width: 100%;
+                }
+                
+                .img-logo {
+                    width: 100%;
                 }
                 
                 .banner-header {
-                    width: 73.5%;
+                    width: 73.43%;
                     height: 90px;
                     background: url(/images/LiveMelodicHusky-size_restricted.gif) no-repeat 0 0;
                     background-size: 100% 100%;
@@ -438,16 +447,12 @@
                 }
                 
                 .img-banner-sidebar {
-                    width: 20vw;
-                    height: 8vw;
-                    max-width: 300px;
-                    max-height: 120px;
+                    width: 100%;
                 }
                 
                 .video-youtube {
                     max-width: 300px;
-                    width: 20vw;
-                    height: 11.25vw;
+                    width: 100%;
                     max-height: 168px;
                     margin-top: 16px;
                 }
@@ -470,58 +475,56 @@
                 }
                 
                 .user-news {
-                    width: 19.5vw;
+                    width: 48%;
                     margin-left: 7px;
                 }
                 
                 .news-inspiration {
+                    width: 100%;
                     display: flex;
                     justify-content: space-between;
                 }
                 
                 .random-inspiration {
-                    width: 19.5vw;
+                    width: 48%;
                     margin-left: 7px;
+                    min-width: 205px;
                 }
                 
                 .list-works {
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-                    margin-right: -0.3vw;
+                    width: 100%;
                 }
                 
                 .link-works img {
-                    width: 5vw;
-                    height: 5vw;
+                    width: 100%;
                     border: 5px solid #E6E6E6;
-                    max-width: 80px;
-                    max-height: 80px;
+                    box-sizing: border-box;
                 }
                 
                 .link-works {
-                    margin-right: 0.3vw;
                     display: block;
                     margin-top: 1.3vw;
+                    width: 31%;
                 }
                 
                 .facebook {
                     margin-top: 24px;
                     border: 1px solid #97a2c1;
                     max-width: 300px;
-                    width: 19.9666vw;
+                    width: 100%;
                     box-sizing: border-box;
                 }
                 
                 .img-facebook {
                     max-width: 298px;
-                    /* width: 19.8666vw; */
                     width: 100%;
                 }
                 
                 .like {
                     background-color: #EDEFF5;
-                    /*  width: 19.8vw; */
                     width: 100%;
                     max-width: 298px;
                     border-bottom: 1px solid #d9dee9;
@@ -642,6 +645,18 @@
                     font-size: 1.2rem;
                 }
                 
+                .news-inspiration-w700 {
+                    display: none;
+                }
+                
+                .video-youtube-w700 {
+                    display: none;
+                }
+                
+                .heading-video {
+                    display: none;
+                }
+                
                 @media screen and (min-width:1151px) and (max-width: 1310px) {
                     .menu-site-link {
                         font-size: 1.4rem;
@@ -720,6 +735,9 @@
                     }
                     .facebook {
                         width: 30vw;
+                    }
+                    .footer-top {
+                        padding: 0 8%;
                     }
                 }
                 
@@ -855,5 +873,31 @@
                     }
                     .input-search-blog {
                         width: 43vw;
+                    }
+                    .news-inspiration-w700 {
+                        display: flex;
+                    }
+                    .random-inspiration-w700 {
+                        margin-right: 7px;
+                    }
+                    .news-inspiration-w1000 {
+                        display: none;
+                    }
+                    .footer-top {
+                        padding: 0 8%;
+                    }
+                    .video-youtube-w700 {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                    }
+                    .video-youtube {
+                        width: 47%;
+                        margin: 0 1.5%;
+                    }
+                    .heading-video {
+                        display: inline-block;
+                        margin-left: 7px;
                     }
                 }
