@@ -31,7 +31,6 @@
                 .banner-header {
                     width: 73.5%;
                     height: 90px;
-                    /* background-color: #e9e9eb; */
                     background: url(/images/LiveMelodicHusky-size_restricted.gif) no-repeat 0 0;
                     background-size: 100% 100%;
                     text-align: center;
@@ -125,6 +124,7 @@
                 }
                 
                 .content {
+                    padding-bottom: 50px;
                     width: 66vw;
                     margin: 0 auto;
                     display: flex;
@@ -387,6 +387,261 @@
                     display: none;
                 }
                 
+                .categories a,
+                .latest-posts a {
+                    font-size: 1.3rem;
+                    color: #545454;
+                    white-space: nowrap;
+                }
+                
+                .categories-list {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .categories ul,
+                .latest-posts ul {
+                    list-style-type: none;
+                }
+                
+                .h2-heading-site {
+                    display: block;
+                    font-size: 2rem;
+                    color: #64b1bd;
+                    border-bottom: 7px solid #e6e6e6;
+                    margin-top: 25px;
+                }
+                
+                .categories-list-item li {
+                    margin-top: 13px;
+                }
+                
+                .categories-list-item:last-child {
+                    margin-right: 5vw;
+                }
+                
+                .latest-posts-img {
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                    margin-right: 0.5vw;
+                }
+                
+                .latest-posts ul {
+                    margin-top: 13px;
+                }
+                
+                .latest-posts li {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                }
+                
+                .img-banner-sidebar {
+                    width: 20vw;
+                    height: 8vw;
+                    max-width: 300px;
+                    max-height: 120px;
+                }
+                
+                .video-youtube {
+                    max-width: 300px;
+                    width: 20vw;
+                    height: 11.25vw;
+                    max-height: 168px;
+                    margin-top: 16px;
+                }
+                
+                .h3-news {
+                    font-size: 1.5rem;
+                    color: #cc4b11;
+                    font-weight: bold;
+                    margin-top: 23px;
+                    display: block;
+                }
+                
+                .text-news {
+                    font-size: 1.3rem;
+                    color: #3a3a3a;
+                }
+                
+                .news-inspiration ul {
+                    list-style-type: none;
+                }
+                
+                .user-news {
+                    width: 19.5vw;
+                    margin-left: 7px;
+                }
+                
+                .news-inspiration {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .random-inspiration {
+                    width: 19.5vw;
+                    margin-left: 7px;
+                }
+                
+                .list-works {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-right: -0.3vw;
+                }
+                
+                .link-works img {
+                    width: 5vw;
+                    height: 5vw;
+                    border: 5px solid #E6E6E6;
+                    max-width: 80px;
+                    max-height: 80px;
+                }
+                
+                .link-works {
+                    margin-right: 0.3vw;
+                    display: block;
+                    margin-top: 1.3vw;
+                }
+                
+                .facebook {
+                    margin-top: 24px;
+                    border: 1px solid #97a2c1;
+                    max-width: 300px;
+                    width: 19.9666vw;
+                    box-sizing: border-box;
+                }
+                
+                .img-facebook {
+                    max-width: 298px;
+                    /* width: 19.8666vw; */
+                    width: 100%;
+                }
+                
+                .like {
+                    background-color: #EDEFF5;
+                    /*  width: 19.8vw; */
+                    width: 100%;
+                    max-width: 298px;
+                    border-bottom: 1px solid #d9dee9;
+                    transform: translateY(-2px);
+                }
+                
+                .img-avatar {
+                    margin: 10px;
+                }
+                
+                .img-avatar,
+                .nick-like {
+                    display: inline-block;
+                }
+                
+                .img-like {
+                    border: 1px solid #ccd3e6;
+                    border-radius: 2px;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                }
+                
+                .nick {
+                    color: #475aa8;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                }
+                
+                .like-people {
+                    padding: 10px 10px 20px 10px;
+                }
+                
+                .avatar-nick {
+                    text-align: center;
+                    width: 16.6666%;
+                }
+                
+                .avatar-people {
+                    margin-top: 7px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .people-img {
+                    max-width: 50px;
+                    max-height: 50px;
+                    width: 100%;
+                }
+                
+                .text-footer {
+                    font-size: 1.3rem;
+                    color: #3a3a3a;
+                    line-height: 24px;
+                }
+                
+                .footer-top {
+                    display: flex;
+                    background-color: #f0f0f0;
+                    padding: 0 18%;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                
+                .footer-top h2 {
+                    border-bottom: 0;
+                    margin-bottom: 15px;
+                }
+                
+                .footer-top ul {
+                    list-style-type: none;
+                }
+                
+                .about {
+                    width: 31%;
+                    margin-right: 3%;
+                }
+                
+                .browse {
+                    width: 27%;
+                    margin-right: 4%;
+                }
+                
+                .links-site a {
+                    font-size: 1.3rem;
+                    color: #3a3a3a;
+                    line-height: 24px;
+                }
+                
+                .links-site a:hover {
+                    color: #cc4b11;
+                }
+                
+                .links-site {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .write {
+                    width: 31%;
+                }
+                
+                .contact-us {
+                    margin-top: 20px;
+                }
+                
+                .link-contact-us {
+                    color: #cc4b11;
+                    font-size: 1.3rem;
+                }
+                
+                .footer-bottom {
+                    align-items: center;
+                    padding: 0 18%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: #3a3a3a;
+                    font-size: 1.2rem;
+                }
+                
                 @media screen and (min-width:1151px) and (max-width: 1310px) {
                     .menu-site-link {
                         font-size: 1.4rem;
@@ -456,6 +711,15 @@
                     .menu-header {
                         min-width: 409px;
                         width: 55vw;
+                    }
+                    .video-youtube {
+                        width: 30vw;
+                        height: 14vw;
+                        max-width: 300px;
+                        max-height: 350px;
+                    }
+                    .facebook {
+                        width: 30vw;
                     }
                 }
                 
